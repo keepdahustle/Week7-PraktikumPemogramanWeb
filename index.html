@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Digital - Kreator Konten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>PortfolioHub</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Selamat Datang di Portfolio Satrio Aji</h2>
+                <p class="hero-subtitle">Seorang desainer dan developer yang passionate dalam menciptakan pengalaman digital yang luar biasa</p>
+                <button class="btn btn-primary" onclick="showAlert()">Mulai Jelajahi</button>
+            </div>
+        </section>
+
+        <!-- TENTANG SECTION -->
+        <section id="tentang" class="tentang">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="tentang-content">
+                    <div class="tentang-text">
+                        <p>Halo! Saya adalah seorang profesional kreatif dengan pengalaman lebih dari 5 tahun di bidang desain grafis dan web development. Saya berdedikasi untuk menciptakan solusi digital yang tidak hanya indah secara visual, tetapi juga fungsional dan user-friendly.</p>
+                        <p>Keahlian saya meliputi UI/UX Design, Web Development, dan Digital Marketing. Saya percaya bahwa setiap proyek adalah kesempatan untuk belajar dan berkembang.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Keahlian Utama</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Web Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio Terbaru</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="portfolio-icon">🎨</span>
+                        </div>
+                        <h3>Website E-Commerce</h3>
+                        <p>Platform belanja online modern dengan fitur pembayaran terintegrasi dan dashboard admin yang user-friendly.</p>
+                        <button class="btn btn-secondary" onclick="lihatDetail('E-Commerce')">Lihat Detail</button>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="portfolio-icon">📱</span>
+                        </div>
+                        <h3>Aplikasi Mobile</h3>
+                        <p>Aplikasi mobile untuk manajemen tugas dengan sinkronisasi cloud dan notifikasi real-time yang efisien.</p>
+                        <button class="btn btn-secondary" onclick="lihatDetail('Mobile App')">Lihat Detail</button>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="portfolio-icon">🎬</span>
+                        </div>
+                        <h3>Platform Video Streaming</h3>
+                        <p>Website streaming video dengan rekomendasi konten berbasis AI dan kualitas video adaptif hingga 4K.</p>
+                        <button class="btn btn-secondary" onclick="lihatDetail('Video Streaming')">Lihat Detail</button>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="portfolio-icon">💼</span>
+                        </div>
+                        <h3>Dashboard Analytics</h3>
+                        <p>Dashboard analitik bisnis dengan visualisasi data interaktif dan laporan real-time yang komprehensif.</p>
+                        <button class="btn btn-secondary" onclick="lihatDetail('Analytics')">Lihat Detail</button>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span class="portfolio-icon">🌐</span>
+                        </div>
+                        <h3>Website Korporat</h3>
+                        <p>Website perusahaan profesional dengan SEO optimization dan performa loading yang sangat cepat.</p>
+                        <button class="btn btn-secondary" onclick="lihatDetail('Korporat')">Lihat Detail</button>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                            <span class="portfolio-icon">🎓</span>
+                        </div>
+                        <h3>Platform E-Learning</h3>
+                        <p>Platform pembelajaran online dengan video course, quiz interaktif, dan sertifikat digital otomatis.</p>
+                        <button class="btn btn-secondary" onclick="lihatDetail('E-Learning')">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK SECTION -->
+        <section id="kontak" class="kontak">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <div class="kontak-content">
+                    <div class="kontak-info">
+                        <div class="info-item">
+                            <h3>📧 Email</h3>
+                            <p>satrioajidsgn@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>📍 Lokasi</h3>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <form class="kontak-form" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjek">Subjek</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek pesan" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PortfolioHub</h4>
+                    <p>Menciptakan pengalaman digital yang luar biasa untuk setiap klien.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Satrio Aji. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
